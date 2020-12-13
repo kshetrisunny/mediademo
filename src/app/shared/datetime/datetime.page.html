@@ -1,0 +1,7 @@
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Date & Time</ion-title>
+    <ion-title size="small" slot="end">Active time {{ today | date: 'HH:mm:ss' }}</ion-title>
+    <ion-datetime displayFormat="MMM DD, YYYY h:mm A" [(ngModel)]="myDate" ngDefaultControl></ion-datetime>
+  </ion-toolbar>
+</ion-footer>

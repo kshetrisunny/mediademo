@@ -1,0 +1,39 @@
+<ion-header [ngClass]='category' [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item lines="full">
+    <ion-row>
+      <ion-col>
+        <div class="imagePreview" *ngIf="logoURL && logoURL !== ''">
+          <img class="img-size" [src]="logoURL">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <ion-button (click)="selectImage2()" color="medium" fill="outline" shape="round" expand="block">Pick Profile Image
+  </ion-button>
+  <div class="text-center">
+    <h4>{{profileName1}}</h4>
+  </div>
+  <ion-item>
+    <ion-label position="floating">Profile Name</ion-label>
+  <ion-input type="text" [(ngModel)]=profileName placeholder="Profile Name"></ion-input>
+  </ion-item>
+  <ion-button style="float:right" (click)="addName()">Add Name</ion-button>
+  
+  <!-- <ion-datetime displayFormat="MMM DD, YYYY h:mm A" [(ngModel)]="myDate" ngDefaultControl ></ion-datetime> -->
+
+</ion-content>
+<ion-footer>
+  <app-datetime></app-datetime>
+</ion-footer>

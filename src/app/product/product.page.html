@@ -1,0 +1,46 @@
+<ion-header [ngClass]='category'>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <img height="80" src="assets/user.png" />
+          <h4>iphone</h4>
+          <ion-button (click)="checkout()">Buy Now</ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img height="80" src="assets/user.png" />
+          <h4>iphone tab</h4>
+          <ion-button (click)="checkout()">Buy Now</ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img height="80" src="assets/user.png" />
+          <h4>macbook</h4>
+          <ion-button (click)="checkout()">Buy Now</ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <img height="80" src="assets/user.png" />
+          <h4>macbook</h4>
+          <ion-button (click)="checkout()">Buy Now</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <app-datetime></app-datetime>
+</ion-footer>
